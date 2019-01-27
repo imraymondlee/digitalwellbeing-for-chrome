@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Digital Wellbeing Dashboard</title>
+
+    <!-- Load jQuery -->
+    <script src="/materialize/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Load Materialize css and js -->
+    <link href="/materialize/css/materialize.css" rel="stylesheet">
+    <script type="text/javascript" src="/materialize/js/bin/materialize.min.js"></script>
+
+    <!-- Load C3 and D3  -->
+    <link href="/materialize/css/c3.css" rel="stylesheet">
+    <script type="text/javascript" src="/materialize/js/c3.min.js"></script>
+    <script type="text/javascript" src="/materialize/js/d3-5.4.0.min.js"></script>
+
+    <!-- custom css -->
+    <link href="/materialize/css/dashboard.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+        <h1>Digital Wellbeing Dashboard</h1>
+    </header>
+    <div id="content">
+        <div id="wrapper">
+            <div id="leftCol">
+                <div id="graphControls">
+                    <div class="card">
+                        <div class="card-tabs">
+                            <ul class="tabs">
+                                <li class="tab"><a class="active" href="#chart1">Total</a></li>
+                                <li class="tab"><a href="#chart2">Chrome</a></li>
+                                <li class="tab"><a href="#chart3">Android</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey lighten-4">
+                            <div id="chart1">Total chart</div>
+                            <div id="chart2">Chrome chart</div>
+                            <div id="chart3">Android chart</div>
+                        </div>
+                        <div class="card-content">
+                            <p>Additional more detailed digital habits information</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="rightCol">
+                <div class="section">
+                    <h2>Focus Mode</h2>
+                    <div class="card" id="focusSettings">
+                        <ul id="focusSettingsList">
+                            <li>Setting 1</li>
+                            <li>Setting 2</li>
+                            <li>Setting 3</li>
+                            <li>Setting 4</li>
+                            <li>Setting 5</li>
+                            <li><a href="#">Edit</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2>Unproductive Sites</h2>
+                    <div class="card" id="negativeSites">
+                        <ul id="negativeSitesList">
+                            <li>https://www.reddit.com/</li>
+                            <li>https://www.facebook.com/</li>
+                            <li>https://www.youtube.com/</li>
+                            <li>https://www.instagram.com/</li>
+                            <li>https://www.pinterest.com/</li>
+                            <li><a href="/html/settings.html">Add another</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="/js/dashboard.js"></script>
+
+</body>
+
+</html>

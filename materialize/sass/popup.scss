@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+#wrapper {
+    padding: 1.2rem;
+    width: 275px;
+    max-height: 606px;
+}
+
+#title {
+    align-content: center;
+    h1 {
+        text-align: center;
+    }
+}
+
+#settings {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#mainItems {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    text-align: center; 
+    label {
+        font-size: 1rem;
+    }
+    .timer {
+        font-size: 2.4rem;
+        font-weight: 600;
+        padding: 2.2rem, 1.2rem;
+    }
+    
+}
+
+#footer {
+    text-align: center;
+}
+
+// Color
+@import "components/color-variables";
+@import "components/color-classes";
+
+// Variables;
+@import "components/variables";
+
+// Reset
+@import "components/normalize";
+
+// components
+@import "components/global";
+@import "components/badges";
+@import "components/icons-material-design";
+@import "components/buttons";
+

@@ -1,0 +1,34 @@
+{
+  "name": "Digital Wellbeing",
+  "version": "1.0",
+  "description": "A browser extension to Google Digital Wellbeing",
+  "permissions": [
+    "activeTab", 
+    "storage",
+    "webRequest",
+    "<all_urls>",
+    "webRequestBlocking"
+    ],
+  "background": {
+        "scripts": ["/js/background.js"],
+        "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "16": "images/wellness_logo16.png",
+      "32": "images/wellness_logo32.png",
+      "48": "images/wellness_logo48.png",
+      "128": "images/wellness_logo128.png"
+    },
+    "default_title": "Digital Wellbeing"
+  },
+  "icons": {
+    "16": "images/wellness_logo16.png",
+    "32": "images/wellness_logo32.png",
+    "48": "images/wellness_logo48.png",
+    "128": "images/wellness_logo128.png"
+  },
+  "manifest_version": 2
+}
+

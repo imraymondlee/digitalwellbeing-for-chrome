@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+#header{
+    background-color: #4688f1;
+    text-align: center;
+    line-height: 8rem;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    h1{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+        // height: 8rem;
+        margin: 0;
+        vertical-align: middle;
+    }
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+}
+
+#chart1, #chart2, #chart3 {
+    height: 400px;
+    width: 400px;
+    padding: 1rem;
+}
+
+#wrapper {
+    max-width: 1800px;
+    min-width: 1400px;
+    display: flex;
+    // background-color: lightgoldenrodyellow;
+    align-content: space-around;
+    justify-content: space-between;
+
+    #leftCol {
+        flex-basis: 66%;
+        flex-grow: 2;
+        // background-color: lightcoral;
+        padding: 2rem;
+
+        .card-content {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    #rightCol {
+        flex-basis: 33%;
+        flex-grow: 1;
+        padding: 2rem;
+        // background-color: lightgreen;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+        justify-content: flex-start;
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.4rem;
+            margin: 0;
+        }
+        .card{
+            padding: 1rem;
+            #focusSettings{
+
+            }
+    
+            #negativeSitesList {
+    
+            }
+        }
+    }
+}
+
+// Color
+@import "components/color-variables";
+@import "components/color-classes";
+
+// Variables;
+@import "components/variables";
+
+// Reset
+@import "components/normalize";
+
+// components
+@import "components/typography";
+// @import "components/tabs";
+// @import "components/cards";

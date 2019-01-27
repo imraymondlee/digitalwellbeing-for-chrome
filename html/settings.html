@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Digital Wellbeing Dashboard</title>
+
+    <!-- Load jQuery -->
+    <script src="/materialize/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Load Materialize css and js -->
+    <link href="/materialize/css/materialize.css" rel="stylesheet">
+    <script type="text/javascript" src="/materialize/js/bin/materialize.min.js"></script>
+
+    <!-- Load C3 and D3  -->
+    <link href="/materialize/css/c3.css" rel="stylesheet">
+    <script type="text/javascript" src="/materialize/js/c3.min.js"></script>
+    <script type="text/javascript" src="/materialize/js/d3-5.4.0.min.js"></script>
+
+    <!-- custom css -->
+    <link href="/materialize/css/dashboard.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+        <h1>Digital Wellbeing Settings</h1>
+    </header>
+    <div id="content">
+        <div id="wrapper">
+
+            <div id="leftCol">
+                <div class="section">
+
+                  <h4>Settings</h4>
+                  <label for="newSite">Enter website to block: </label>
+                  <input id="newSite" type="text">
+                  <button id="newSiteSubmit" class="btn">Add</button>
+
+                </div>
+
+            </div>
+            <div id="rightCol">
+                <div class="section">
+                  <h4>Currently Blocked:</h4>
+                  <div id="currentBlocked"></div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/background.js"></script>
+    <script src="/js/settings.js"></script>
+
+</body>
+
+</html>
